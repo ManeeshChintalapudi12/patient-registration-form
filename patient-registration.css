@@ -1,124 +1,139 @@
-  body {
-    background-image: url('https://s3-us-west-2.amazonaws.com/userdata123/www/imagefields/6189/theme_form_background_image-1655979649-847-74-3796189495.jpg?=1655979651494&=1657296639287');
-    background-color: lightblue;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  form {
-    background-color: aliceblue;
-    box-sizing: border-box;
-    font-family: Raleway;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-  }
-  h1
-  {
-    text-align: left;
-    font-family: Raleway;
-    font-size: 40px;
 
-  }
-  p
-  {
-    text-align: left;
-    font-family: Raleway;
-    font-size: 30px;
-  }
-    .form-group
-  {
-    border: none;
-    outline: none;
-    font-size: 18px;
-  }
-  
-  .Gender input[type='radio']
-  {
-    box-sizing: border-box;
-    appearance: none;
-    background: white;
-    outline: 2px solid #333;
-    border: 3px solid white;
-    width: 16px;
-    height: 16px;
-  }
-  #firstName,
-  #lastName,
-  #Male,
-  #Female,
-  #number,
-  #date,
-  #Marital-Status,
-  #address,
-  #city,
-  #state,
-  #zip,
-  #country,
-  #Insurance,
-  #history,
-  {
-  
-      color: #070606;
-      text-align: center;
-      padding: 15px 15px;
-      border-width: 1px !important;
-      border-style: solid !important;
-      border-radius: 6px !important;
-      font-family: Raleway;
-      font-size: 16px;
-      font-weight: normal;
-      font-style: normal;
-      line-height: 1.2em;
-      background-color: rgba(0, 0, 0, .15);
-      border-color: transparent;
-  }
-  
-  
-  
-  .PatientMedicalHistory {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-  }
-  
-  .checkbox-item {
-    display: flex;
-    border: none;
-    
-  }
-  
-  .PatientMedicalHistory input[type="checkbox"] {
-   
-    accent-color: #030303; 
-  }
-  
-    
-  
-  .button {
-    display: flex;
-    background-color: black;
-    text-align: center;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .PatientName,
-  .Gender,
-  .PatientPhone,
-  .PatientDOB,
-  .PatientMstatus,
-  .PatientAddress,
-  .PatientInsurence,
-  .PatientMedicalHistory {
-      width: 100%;
-  }
-  
-  
-  
+body {
+  font-family: Raleway;
+  background-image: url('https://s3-us-west-2.amazonaws.com/userdata123/www/imagefields/6189/theme_form_background_image-1655979649-847-74-3796189495.jpg?_=1655979651494&_=1657296639287');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+form {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border: 2px solid #cccccc;
+  border-radius: 8px;
+}
+
+.Registration-form, .Signature-form {
+  margin-bottom: 10px;
+  color: black;
+  font-size: 24px;
+}
+
+.description {
+  color: black;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  flex: 0 0 40%; /* Labels take up 40% of the space */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #999;
+  background-color: #e0e0e0;
+  color: #333;
+  box-sizing: border-box;
+}
+
+input[type="radio"] {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #333;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  background-color: #333;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.button input[type="submit"] {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 50%;
+  font-size: 16px;
+}
+
+.button input[type="submit"]:hover {
+  background-color: #333333;
+}
+
+.patient-info-column {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.patient-name-row,
+.gender-row,
+.marital-row,
+.city-state-row,
+.zip-country-row {
+  display: flex;
+  gap: 10px;
+  width: 100%; /* Each group takes the full row */
+}
+
+.patient-name-row input {
+  flex: 0 0 48%; /* First and Last Name take up 48% each */
+}
+
+.gender-row input,
+.marital-row input {
+  flex: 0 0 48%; /* Gender and Marital Status inputs take up 48% each */
+}
+
+.city-state-row input {
+  flex: 0 0 48%; /* City and State take up 48% each */
+}
+
+.zip-country-row input,
+.zip-country-row select {
+  flex: 0 0 48%; /* Zip and Country take up 48% each */
+}
+
+
+.history-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.history-row label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0;
+}
