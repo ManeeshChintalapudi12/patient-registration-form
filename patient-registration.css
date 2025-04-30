@@ -42,7 +42,7 @@ hr {
 .form-group label {
   font-weight: bold;
   margin-bottom: 5px;
-  flex: 0 0 40%; /* Labels take up 40% of the space */
+  flex: 0 0 40%; 
 }
 
 input[type="text"],
@@ -103,25 +103,25 @@ input[type="checkbox"] {
 .zip-country-row {
   display: flex;
   gap: 10px;
-  width: 100%; /* Each group takes the full row */
+  width: 100%; 
 }
 
 .patient-name-row input {
-  flex: 0 0 48%; /* First and Last Name take up 48% each */
+  flex: 0 0 48%; 
 }
 
 .gender-row input,
 .marital-row input {
-  flex: 0 0 48%; /* Gender and Marital Status inputs take up 48% each */
+  flex: 0 0 48%; 
 }
 
 .city-state-row input {
-  flex: 0 0 48%; /* City and State take up 48% each */
+  flex: 0 0 48%;
 }
 
 .zip-country-row input,
 .zip-country-row select {
-  flex: 0 0 48%; /* Zip and Country take up 48% each */
+  flex: 0 0 48%;
 }
 
 
