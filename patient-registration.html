@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Registration Form</title>
+    <link rel="stylesheet" href="PatientForm.css">
+</head>
+<body>
+    <form class="form-container">
+        <h1 class="Regestration-form">Patient Registration Form</h1>
+        <p class="description">Thank you for applying to our practices. Please complete this patient registration form, and a doctor will contact you shortly.</p>
+        <hr>
+
+        <div class="form-group">
+            <label for="firstName">Patient's-Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            <input type="text" id="lastName" name="lastName" required>
+        </div>
+
+        <div class="form-group">
+            <label>Gender:</label>
+            <label><input type="radio" name="gender" value="Male" required> Male</label>
+            <label><input type="radio" name="gender" value="Female"> Female</label>
+        </div>
+
+        <div class="form-group">
+            <label for="number">Phone-Number:</label>
+            <input type="number" id="number" name="number" required>
+        </div>
+
+        <div class="form-group">
+            <label for="date">Date-of-Birth:</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+
+        <div class="form-group">
+            <label>Marital-Status:</label>
+            <label><input type="checkbox" name="Marital-Status" value="Single">Single</label>
+            <label><input type="checkbox" name="Marital-Status" value="Married">Married</label>
+            <label><input type="checkbox" name="Marital-Status" value="Divorced">Divorced</label>
+            <label><input type="checkbox" name="Marital-Status" value="Widow">Widow</label>
+        </div>
+
+        <div class="form-group">
+            <label>Address:</label>
+            <input type="text" name="address" placeholder="Street Address" required><br>
+            <input type="text" name="city" placeholder="City" required>  <input type="text" name="state" placeholder="State" required><br>
+            <input type="text" name="zip" placeholder="Zip/Postal Code" required>
+            <select id="country" name="country" required>
+                <option value="">Select a Country</option>
+                <option value="USA">United States of America</option>
+                <option value="IND">India</option>
+                <option value="UK">United Kingdom</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="Insurance">Insurance-Name:</label>
+            <input type="text" id="Insurance" name="Insurance" required>
+        </div>
+
+        <div class="form-group">
+            <label>Past-Medical-History:</label><br>
+            <label><input type="checkbox" name="history" value="Anemia"> Anemia</label><br>
+            <label><input type="checkbox" name="history" value="Asthma"> Asthma</label><br>
+            <label><input type="checkbox" name="history" value="Bronchitis"> Bronchitis</label><br>
+            <label><input type="checkbox" name="history" value="Chickenpox"> Chickenpox</label><br>
+            <label><input type="checkbox" name="history" value="Diabetes"> Diabetes</label><br>
+            <label><input type="checkbox" name="history" value="Pneumonia"> Pneumonia</label><br>
+            <label><input type="checkbox" name="history" value="Thyroid Disease"> Thyroid Disease</label><br>
+            <label><input type="checkbox" name="history" value="Ulcer"> Ulcer</label><br>
+            <label><input type="checkbox" name="history" value="Other"> Other</label>
+        </div>
+
+        <h1 class="Signature-form">Parent/Guardian Signature</h1>
+        <p class="description">According to our privacy policy and federal law, your information within this patient registration form will remain private at all time.</p>
+
+        <div class="button">
+            <input type="submit" value="Register">
+        </div>
+    </form>
+</body>
+</html>

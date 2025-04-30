@@ -1,0 +1,124 @@
+  body {
+    background-image: url('https://s3-us-west-2.amazonaws.com/userdata123/www/imagefields/6189/theme_form_background_image-1655979649-847-74-3796189495.jpg?=1655979651494&=1657296639287');
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  form {
+    background-color: aliceblue;
+    box-sizing: border-box;
+    font-family: Raleway;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  h1
+  {
+    text-align: left;
+    font-family: Raleway;
+    font-size: 40px;
+
+  }
+  p
+  {
+    text-align: left;
+    font-family: Raleway;
+    font-size: 30px;
+  }
+    .form-group
+  {
+    border: none;
+    outline: none;
+    font-size: 18px;
+  }
+  
+  .Gender input[type='radio']
+  {
+    box-sizing: border-box;
+    appearance: none;
+    background: white;
+    outline: 2px solid #333;
+    border: 3px solid white;
+    width: 16px;
+    height: 16px;
+  }
+  #firstName,
+  #lastName,
+  #Male,
+  #Female,
+  #number,
+  #date,
+  #Marital-Status,
+  #address,
+  #city,
+  #state,
+  #zip,
+  #country,
+  #Insurance,
+  #history,
+  {
+  
+      color: #070606;
+      text-align: center;
+      padding: 15px 15px;
+      border-width: 1px !important;
+      border-style: solid !important;
+      border-radius: 6px !important;
+      font-family: Raleway;
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      line-height: 1.2em;
+      background-color: rgba(0, 0, 0, .15);
+      border-color: transparent;
+  }
+  
+  
+  
+  .PatientMedicalHistory {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .checkbox-item {
+    display: flex;
+    border: none;
+    
+  }
+  
+  .PatientMedicalHistory input[type="checkbox"] {
+   
+    accent-color: #030303; 
+  }
+  
+    
+  
+  .button {
+    display: flex;
+    background-color: black;
+    text-align: center;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .PatientName,
+  .Gender,
+  .PatientPhone,
+  .PatientDOB,
+  .PatientMstatus,
+  .PatientAddress,
+  .PatientInsurence,
+  .PatientMedicalHistory {
+      width: 100%;
+  }
+  
+  
+  
