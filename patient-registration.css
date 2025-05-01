@@ -1,152 +1,135 @@
 body 
 {
-  font-family: Raleway;
-  background-image: url('https://s3-us-west-2.amazonaws.com/userdata123/www/imagefields/6189/theme_form_background_image-1655979649-847-74-3796189495.jpg?_=1655979651494&_=1657296639287');
+  background-color: transparent;
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  background-image: url(https://s3-us-west-2.amazonaws.com/userdata123/www/imagefields/6189/theme_form_background_image-1655979649-847-74-3796189495.jpg?_=1655979651494&_=1657296639287);
   background-size: cover;
-  background-position: center;
-  margin: 0;
-  padding: 0;
+  background-repeat: no-repeat;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 form 
 {
-  max-width: 900px;
-  margin: 40px auto;
-  background-color: powderblue;
-  padding: 20px;
-  border: 2px solid #cccccc;
-  border-radius: 8px;
-}
-.Registration-form, .Signature-form 
-{
-  margin-bottom: 10px;
-  color:gray;
-  font-size: 30px;
-}
-.description 
-{
-  color: black;
-  font-size: 25px;
-  margin-bottom: 10px;
-}
-hr
-{
-  margin: 20px 0;
-}
-.form-group 
-{
-  margin-bottom: 20px;
-  text-align: left;
+  background-color: #ffffff;
+  padding: 40px;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 10px;
   display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h1 
+{
+  font-size: 48px;
+  text-align: left;
+}
+
+p 
+{
+  font-size: 24px;
+  text-align: left;
+}
+
+.Regestration-form 
+{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Patientname,
+.Number,
+.Datebirth,
+.Address,
+.Nation,
+.Insurance,
+.Medical-history 
+{
+  display: flex;
+  flex-direction: column;
   gap: 10px;
 }
-.form-group label 
+
+.Patientname label,
+.Number label,
+.Datebirth label,
+.Address label,
+.Nation label,
+.Insurance label,
+.Medical-history label 
 {
+  font-size: 20px;
   font-weight: bold;
-  margin-bottom: 5px;
-  flex: 0 0 40%;
 }
-input[type="text"], input[type="number"], input[type="date"], select 
+
+.Patientname input,
+.Number input,
+.Datebirth input,
+.Address input,
+.MainAddress input,
+.SubAddress input,
+.Nation input,
+.Nation select,
+.Insurance input 
 {
-  width: 50%;
-  padding: 8px;
-  border-radius: 4px;
-  border: 1px solid #999;
-  background-color: #e0e0e0;
-  color: #333;
-  box-sizing: border-box;
-}
-input[type="radio"] 
-{
-  appearance: none;
-  width: 16px;
-  height: 16px;
-  border: 1px solid #333;
-  background-color: #fff;
-  cursor: pointer;
-}
-input[type="radio"]:checked 
-{
-  background-color: #333;
-}
-input[type="checkbox"] 
-{
-  margin-right: 5px;
-}
-.button input[type="submit"] 
-{
-  background-color: #000000;
-  color: #ffffff;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
   font-size: 16px;
 }
-.button input[type="submit"]:hover 
+
+.MainAddress,
+.SubAddress 
+{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.checkbox-group 
+{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkbox-group label 
+{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 15px;
+  color: #34495e;
+}
+
+.Signature-form 
+{
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 30px;
+  color: #2c3e50;
+}
+
+.button 
+{
+  align-self: center;
+  padding: 12px 24px;
+  font-size: 20px;
+  border: none;
+  background-color: black;
+  color: #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button:hover 
 {
   background-color: #333333;
-}
-.patient-info-column 
-{
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.patient-name-row, .gender-row, .marital-row 
-{
-  display: flex;
-  flex-direction: column; 
-  gap: 10px;
-  width: 100%; 
-}
-.patient-name-row input
-{
-  flex: 0 0 48%;
-}
-.patient-name-row input, .gender-row input, .marital-row input 
-{
-  flex: 0 0 48%; 
-}
-.gender-row input 
-{
-  background-color: black; 
-  color: white; 
-}
-.marital-row input 
-{
-   display: flex;
-   flex-direction: column; 
-   background-color: black;
-   color: white;
-}
-.city-state-row input 
-{
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  flex: 0 0 48%;
-
-}
-.zip-country-row input, .zip-country-row select
-{
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  flex: 0 0 48%;
-}
-.history
-{
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  justify-content: flex-start;
-  margin-bottom: 20px;
-}
-.history label 
-{
-  display: flex;
-  align-items: left;
-  gap: 5px;
-  white-space: nowrap;
 }
