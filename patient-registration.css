@@ -1,135 +1,130 @@
-body 
-{
-  background-color: transparent;
-  font-family: Raleway, sans-serif;
+body {
+  font-family: Raleway;
   font-size: 16px;
   background-image: url(https://s3-us-west-2.amazonaws.com/userdata123/www/imagefields/6189/theme_form_background_image-1655979649-847-74-3796189495.jpg?_=1655979651494&_=1657296639287);
-  background-size: cover;
-  background-repeat: no-repeat;
   padding: 20px;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-form 
-{
-  background-color: #ffffff;
-  padding: 40px;
-  width: 90%;
-  max-width: 800px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.patient-form {
+  background-color: aliceblue;
+  width: 900px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
 }
 
-h1 
+.form-group 
 {
-  font-size: 48px;
-  text-align: left;
+   margin-bottom: 20px;
+
 }
 
-p 
-{
-  font-size: 24px;
-  text-align: left;
-}
-
-.Regestration-form 
-{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.Patientname,
-.Number,
-.Datebirth,
-.Address,
-.Nation,
-.Insurance,
-.Medical-history 
-{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.Patientname label,
-.Number label,
-.Datebirth label,
-.Address label,
-.Nation label,
-.Insurance label,
-.Medical-history label 
-{
-  font-size: 20px;
+.form-group label {
   font-weight: bold;
+  margin-bottom: 5px;
 }
 
-.Patientname input,
-.Number input,
-.Datebirth input,
-.Address input,
-.MainAddress input,
-.SubAddress input,
-.Nation input,
-.Nation select,
-.Insurance input 
-{
-  padding: 12px;
+input, select {
+  background-color: #e0e0e0;
+  padding: 15px;
   border: 2px solid #ccc;
-  border-radius: 8px;
-  font-size: 16px;
+  border-radius: 10px;
 }
+.names
+{
+  display: flex;
+  flex-direction: row;
+  font-size: bold;
+}
+.name-fields
+{
+  flex: 1;
+  align-content: inline;
+  gap: 20px;
 
-.MainAddress,
-.SubAddress 
+}.Sex
+{
+  display: flex;
+  flex-direction: row;
+}
+.gender-options
+{
+  flex: 1;
+  align-content: inline;
+  gap: 60px;
+
+}
+.Phone
+{
+  display: flex;
+  flex-direction: row;
+}
+.number
+{
+  flex: 1;
+  align-content: inline;
+  gap: 60px;
+
+}
+.Marital-Status
+{
+  display: flex;
+  flex-direction: row;
+}
+.marital-status
+{
+  flex: 1;
+  align-content: inline;
+  gap: 60px;
+}
+.Details
+{
+  display: flex;
+  flex-direction: row;
+  align-content: inline;
+  width: 100%;
+}
+.address-fields
+{
+  display: flex;
+  width:60%;
+}
+.city-state
+{
+  display: flex;
+  width: 100%;
+
+}
+.zip-country
+{
+  display: flex;
+  width: 100%;
+}
+.form-group
 {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  align-items: inline;
+  text-align: left;
 }
-
-.checkbox-group 
+.medicl-history-options
 {
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
-
-.checkbox-group label 
-{
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 15px;
-  color: #34495e;
-}
-
-.Signature-form 
-{
-  font-size: 24px;
-  font-weight: bold;
-  margin-top: 30px;
-  color: #2c3e50;
-}
-
 .button 
 {
-  align-self: center;
-  padding: 12px 24px;
-  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+.button input[type="submit"] 
+{
+  background-color: #000;
+  color: #fff;
+  padding: 12px 30px;
   border: none;
-  background-color: black;
-  color: #ffffff;
-  border-radius: 8px;
+  border-radius: 4px;
   cursor: pointer;
+  width: 100%;
 }
 
-.button:hover 
-{
-  background-color: #333333;
-}
