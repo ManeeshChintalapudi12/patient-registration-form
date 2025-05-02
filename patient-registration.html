@@ -9,47 +9,58 @@
         <p class="description">Thank you for applying to our practices. Please complete this patient registration form, and a doctor will contact you shortly.</p>
         <hr>
 
-        <div class="names">
+        <div class="form-row names"> 
             <label for="firstName">Patient's Name*</label>
+            <div class="input-group">
             <div class="name-fields">
-                <input type="text" id="firstName" name="firstName" placeholder="First Name" required>         <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                <input type="text" id="firstName" name="firstName" placeholder="First Name" required>         
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+            </div>
             </div>
         </div>
 
-        <div class="Sex">
+        <div class="form-row sex">
             <label>Gender*</label>
+            <div class="input-group">
             <div class="gender-options">
                 <label><span><input type="radio" name="gender" value="Male" required> Male</label>
                 <label><input type="radio" name="gender" value="Female"> Female</label></span>
             </div>
+            </div>
         </div>
 
-        <div class="Phone">
+        <div class="form-row phone">
             <label for="number">Phone*</label>
+            <div class="input-group">
             <div class="number">
             <input type="tel" id="number" name="number" required>
             </div>
+            </div>
         </div>
 
-        <div class="Date">
+        <div class="form-row Date">
             <label for="date">Date of Birth*</label>
+            <div class="input-group">
             <div class="Birth">
             <input type="date" id="date" name="date" required>
             </div>
+            </div>
         </div>
-
-        <div class="Marital-Status">
+        <div class="form-row Marital-Status">
             <label>Marital Status*</label>
+            <div class="input-group">
             <div class="marital-status">
-                <label><span><input type="checkbox" name="Marital-Status" value="Single"> Single</label>
-                <label><input type="checkbox" name="Marital-Status" value="Married"> Married</label>
-                <label><input type="checkbox" name="Marital-Status" value="Divorced"> Divorced</label>
-                <label><input type="checkbox" name="Marital-Status" value="Widow"> Widow</label></span>
+                <label><input type="radio" name="Marital-Status" value="Single"> Single</label>
+                <label><input type="radio" name="Marital-Status" value="Married"> Married</label>
+                <label><input type="radio" name="Marital-Status" value="Divorced"> Divorced</label>
+                <label><input type="radio" name="Marital-Status" value="Widow"> Widow</label>
+            </div>
             </div>
         </div>
 
-        <div class="Details">
+        <div class="form-row Details">
             <label>Patient's Address*</label>
+            <div class="input-group">
             <div class="address-fields">
                 <span><input type="text" name="address" placeholder="Street Address" required></span>
                 <div class="city-state">
@@ -65,17 +76,18 @@
                     <option value="UK">United Kingdom</option>
                 </select>
                 </div>
+                </div>
             </div>
         </div>
 
-        <div class="Insurance">
+        <div class="form-row Insurance">
             <label for="Insurance">Insurance Name*</label>
             <div class="policy">
             <input type="text" id="Insurance" name="Insurance" required>
             </div>
         </div>
 
-        <div class="form-group">
+        <div class="form-row Medical">
             <label>Past Medical History*</label>
             <div class="medical-history-options">
                 <label><input type="checkbox" name="history" value="Anemia"> Anemia</label>

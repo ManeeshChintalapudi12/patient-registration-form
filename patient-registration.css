@@ -1,130 +1,148 @@
+
 body {
+  margin: 0;
+  padding: 0;
   font-family: Raleway;
-  font-size: 16px;
-  background-image: url(https://s3-us-west-2.amazonaws.com/userdata123/www/imagefields/6189/theme_form_background_image-1655979649-847-74-3796189495.jpg?_=1655979651494&_=1657296639287);
-  padding: 20px;
+  background: url(https://s3-us-west-2.amazonaws.com/userdata123/www/imagefields/6189/theme_form_background_image-1655979649-847-74-3796189495.jpg?_=1655979651494&_=1657296639287);
+   background-color:lightblue
+  background-size:cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .patient-form {
   background-color: aliceblue;
-  width: 900px;
-  margin: auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-}
-
-.form-group 
-{
-   margin-bottom: 20px;
-
-}
-
-.form-group label {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-input, select {
-  background-color: #e0e0e0;
-  padding: 15px;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-}
-.names
-{
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   display: flex;
-  flex-direction: row;
-  font-size: bold;
-}
-.name-fields
-{
-  flex: 1;
-  align-content: inline;
+  flex-direction: column;
   gap: 20px;
-
-}.Sex
-{
-  display: flex;
-  flex-direction: row;
 }
+
+.patient-form h1 {
+  margin-bottom: 5px;
+  font-family: Raleway;
+  font-size: 32px;
+  text-align: left;
+}
+
+.patient-form .description {
+  font-size: 24px;
+  color:black;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+hr {
+  border: 2px solid;
+  width: 100%;
+  height: 1px;
+  background: black;
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.form-row label {
+  width: 200px;
+  font-weight: bold;
+}
+
+.input-group, .policy, .medical-history-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  flex: 1;
+}
+
+.name-fields,
+.city-state {
+  display: flex;
+  align-items: inline;
+  gap: 10px;
+}
+
+.name-fields input,
+.city-state input,
+.zip-country input,
+.zip-country select,
+.policy input,
+.input-group input,
+.input-group select {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #f0f0f0;
+}
+
 .gender-options
 {
-  flex: 1;
-  align-content: inline;
-  gap: 60px;
-
-}
-.Phone
-{
   display: flex;
   flex-direction: row;
-}
-.number
-{
-  flex: 1;
-  align-content: inline;
-  gap: 60px;
-
-}
-.Marital-Status
-{
-  display: flex;
-  flex-direction: row;
+  align-content: center;
 }
 .marital-status
 {
-  flex: 1;
-  align-content: inline;
-  gap: 60px;
-}
-.Details
-{
   display: flex;
   flex-direction: row;
-  align-content: inline;
-  width: 100%;
+  align-content: center;
 }
-.address-fields
-{
-  display: flex;
-  width:60%;
-}
-.city-state
-{
-  display: flex;
-  width: 100%;
-
-}
-.zip-country
-{
-  display: flex;
-  width: 100%;
-}
-.form-group
-{
+.medical-history-options {
   display: flex;
   flex-direction: column;
-  align-items: inline;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.gender-options label,
+.marital-status label,
+.medical-history-options label {
+  font-weight: normal;
+}
+
+.Signature-form h1 {
+  font-size: 22px;
   text-align: left;
 }
-.medicl-history-options
-{
-  display: flex;
-  flex-direction: column;
-}
-.button 
-{
-  display: flex;
-  justify-content: center;
-}
-.button input[type="submit"] 
-{
-  background-color: #000;
-  color: #fff;
-  padding: 12px 30px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  width: 100%;
+
+.Signature-form p {
+  text-align: left;
+  font-size: 13px;
+  color: #555;
 }
 
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button input[type="submit"] {
+  background-color: #000;
+  width: 100%;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button input[type="submit"]:hover {
+  background-color: #333;
+}
