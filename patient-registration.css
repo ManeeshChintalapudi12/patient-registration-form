@@ -1,148 +1,116 @@
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Raleway;
-  background: url(https://s3-us-west-2.amazonaws.com/userdata123/www/imagefields/6189/theme_form_background_image-1655979649-847-74-3796189495.jpg?_=1655979651494&_=1657296639287);
-   background-color:lightblue
-  background-size:cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
-.patient-form {
-  background-color: aliceblue;
-  padding: 40px;
-  border-radius: 12px;
-  max-width: 800px;
-  width: 100%;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.patient-form h1 {
-  margin-bottom: 5px;
-  font-family: Raleway;
-  font-size: 32px;
-  text-align: left;
-}
-
-.patient-form .description {
-  font-size: 24px;
-  color:black;
-  text-align: left;
-  margin-bottom: 10px;
-}
-
-hr {
-  border: 2px solid;
-  width: 100%;
-  height: 1px;
-  background: black;
-  margin-bottom: 20px;
-}
-
-.form-row {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.form-row label {
-  width: 200px;
-  font-weight: bold;
-}
-
-.input-group, .policy, .medical-history-options {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  flex: 1;
-}
-
-.name-fields,
-.city-state {
-  display: flex;
-  align-items: inline;
-  gap: 10px;
-}
-
-.name-fields input,
-.city-state input,
-.zip-country input,
-.zip-country select,
-.policy input,
-.input-group input,
-.input-group select {
-  flex: 1;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 14px;
-  background-color: #f0f0f0;
-}
-
-.gender-options
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+body 
 {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
+    background-image: url('https://s3-us-west-2.amazonaws.com/userdata123/www/imagefields/6189/theme_form_background_image-1655979649-847-74-3796189495.jpg?=1655979651494&=1657296639287');
+    background-color: lightblue;
+    display: flex;
+    padding: 30px;
+    gap:10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.marital-status
+form
 {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
+    background-color: aliceblue;
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    width: 85%;
+    height: auto;
+    gap: 10px;
+    align-items: center;
+    display: inline-block;
 }
-.medical-history-options {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 15px;
+.Registration-form
+{
+    font-family: Raleway;
+    font-size: 35px;
 }
-
-.gender-options label,
-.marital-status label,
-.medical-history-options label {
-  font-weight: normal;
+.description
+{
+    font-family: Raleway;
+    font-size: 25px;
+    color:black
 }
-
-.Signature-form h1 {
-  font-size: 22px;
-  text-align: left;
+.names
+{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
-
-.Signature-form p {
-  text-align: left;
-  font-size: 13px;
-  color: #555;
-}
-
-.button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.button input[type="submit"] {
-  background-color: #000;
-  width: 100%;
-  color: white;
-  padding: 12px 30px;
-  border: none;
-  border-radius: 6px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.sex
+{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
 }
 
-.button input[type="submit"]:hover {
-  background-color: #333;
+.phone
+{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+ }
+ .Calender
+ {
+     display: flex;
+     flex-direction: row;
+     gap: 60px;
+  }
+.Marital-Status
+{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+.Details
+{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+ }
+ .address
+ {
+    display: flex;
+    flex-direction: column;
+ }
+.Insurance
+{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+.Medical
+{
+    display: flex;
+    flex-direction: row; 
+    text-align: inline;
+    gap: 60px;
+
+}
+input[type=text], select,input[type=date], input[type=tel] 
+{
+    width: 100%;
+    height: 15px;
+    padding: 15px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color:rgba(0, 0, 0, .15);
+}
+input[type=submit] {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
