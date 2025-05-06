@@ -2,30 +2,31 @@
 body 
 {
     background-image: url('https://s3-us-west-2.amazonaws.com/userdata123/www/imagefields/6189/theme_form_background_image-1655979649-847-74-3796189495.jpg?=1655979651494&=1657296639287');
-    background-color: lightblue;
-    background-size: cover;
+    background-color: rgb(234, 245, 247);
     display: flex;
-    padding: 30px;
-    gap:10px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100; 
+  }
 form
 {
-    background-color: aliceblue;
-    box-sizing: border-box;
-    font-family: Raleway;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
-    width: 85%;
-    height: 90%;
-    gap: 10px;
-    align-items: center;
-    display: inline-block;
+    background-color: hsl(0, 22%, 96%);
+  box-sizing: border-box;
+  font-family: 'Raleway';
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 75%;
+  gap: 10px;
+  align-items: center;
+  display: inline-block;
+  margin-right: 8px;
 }
+
+
 .Registration-form
 {
     font-family: Raleway;
@@ -37,58 +38,79 @@ form
     font-size: 25px;
     color:black
 }
-.names
+.form-names
 {
     display: flex;
     flex-direction: row;
+    padding: 20px;
     gap: 60px;
 }
-.sex
+.form-sex
 {
     display: flex;
     flex-direction: row;
-    gap: 60px;
+    padding: 20px;
+    gap: 80px;
 }
 
-.phone
+.form-phone
 {
     display: flex;
     flex-direction: row;
+    padding: 30px;
     gap: 60px;
  }
- .Calender
+ .form-Calender
  {
      display: flex;
      flex-direction: row;
+     padding: 20px;
      gap: 60px;
   }
-.Marital-Status
+.form-Marital-Status
 {
     display: flex;
     flex-direction: row;
+    padding: 20px;
     gap: 60px;
 }
-.Details
+.form-Details
 {
     display: flex;
     flex-direction: row;
+    padding: 20px;
     gap: 60px;
  }
  .address
  {
     display: flex;
-    flex-direction: row; 
+    flex-direction: column; 
+    padding: 20px;
     text-align: inline;
     gap: 60px;
-
  }
-.Insurance
+.city-state
+{
+    display: flex;
+    flex-direction: row; 
+    width: 100%;
+    padding: 20px;
+}
+.zip-country
 {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    padding: 20px;
+}
+.form-Insurance
+{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
     gap: 60px;
 }
-.Medical
+.form-Medical
 {
     display: flex;
     flex-direction: row; 
@@ -98,11 +120,13 @@ form
 }
 input[type=text], select,input[type=date], input[type=tel] 
 {
+
     width: 100%;
-    height: 15px;
-    padding: 15px 20px;
+    height: 20px;
+    padding: 20px 20px;
     margin: 8px 0;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     border: 1px solid #ccc;
     border-radius: 6px;
